@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>&nbsp;</title>
+    <title> </title>
     <script>
       // function for the day
-      function light(n=500) {
+      function light(n=500,t='\u{1f56f}') {
         document.body.innerHTML="";
         document.body.style.background="#444";
         h=window.innerHeight;
         w=window.innerWidth;
         for(i=0;i<n;++i){
           d=document.createElement('span');
-          // d.innerText='\ud83d\udd6f';
-          d.innerText='\u{1f56f}';
+          d.innerText=t;
           x=Math.random()*w;
           y=Math.random()*h;
           d.style.position='absolute';
